@@ -2,17 +2,73 @@
 
 ---
 
-
-<header>
-	<figcaption>
-		<img src="https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png" style="background: black;" alt="logo uvg">
-	</figcaption>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Blog's</a></li>
-			<li><a href="#">About</a></li>
-		</ul>
-	</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+	<img src="https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png" alt="logo uvg" />
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="./blog.astro">Blog's</a></li>
+      <li><a href="./about.astro">About</a></li>
+    </ul>
+  </nav>
 </header>
 <h1>Hola</h1>
+
+</body>
+</html>
+
+
+<style>
+  header {
+    background: black;
+		align-items: center;
+		height: 80px;
+		color: white;
+		display: flex;
+		border-radius: 5px;
+		padding: 2em;
+  }
+
+	img {
+		width: 150px;
+		cursor: pointer;
+	}
+
+
+	nav {
+		flex: 1;
+		text-align: right;
+	}
+
+	nav ul li {
+		list-style: none;
+		display: inline-block;
+		margin-left: 80px;
+		padding: 2em;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: white;
+		font-size: 1rem;
+		color: rgba(255, 255, 255, 0.8);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1rem;
+		/* padding: 12px 10px; */
+	}
+
+	nav ul li a:hover {
+		color: white;
+		background-color: #0084ff;
+		box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
+		border-radius: 1em;
+	}
+</style>
