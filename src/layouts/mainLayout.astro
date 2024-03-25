@@ -1,0 +1,68 @@
+---
+const profilePicture = "https://avatars.githubusercontent.com/u/123915205?v=4";
+---
+<main>
+  <section class="profile">
+    <img 
+      src={profilePicture}
+      class="profile__picture"
+      alt="Profile piture"
+      width="100px"
+      height="100px"
+    />
+
+    <div class="profile__details">
+      <!-- <h1>Blog | Actvidades de Comunicacion Oral y Escrita</h1> -->
+      <h1>Victoriano Juarez</h1>
+      <h2>T&eacute;cnico en Inform&aacute;tica</h2>
+      <p>
+        Ayudo los desarrolladores para crear excelentes y buenos proyectos excalables.
+      </p>
+    </div>
+  </section>
+</main>
+
+<style>
+	.profile {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap:wrap;
+		padding: 1rem 0 3rem 0;
+		/* margin-left: 3em; */
+	}
+
+	.profile__details {
+		flex: 1 0 300px;
+	}
+
+	.profile__details > h1 {
+		margin-top: 0;
+	}
+
+	.profile__picture {
+		border-radius: 50%;
+		margin: 0 2rem 1rem 0;
+	}
+
+	/* h1:where(.astro-some-unique-id) {
+		color: red;
+	} */
+	h1 {
+		color: red;
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+
+	h1 + h2 {
+		font-size: 1.1rem;
+		/* line-height: 3; */
+		margin-top: -1.4rem;
+		opacity: 0.9;
+		font-weight: 500;
+	}
+
+	main {
+		max-width: 70rem;
+		margin: auto;
+	}
+</style>
