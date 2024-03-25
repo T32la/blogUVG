@@ -1,55 +1,54 @@
 ---
-
+import Main from "../layouts/mainLayout.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<header>
-	<img src="https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png" alt="logo uvg" />
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="./blog.astro">Blog's</a></li>
-      <li><a href="./about.astro">About</a></li>
-    </ul>
-  </nav>
-</header>
-	<main>
-		<section>
-			<h1>Blog | Actvidades de Comunicacion Oral y Escrita</h1>
-			<img src="https://wallpapers.com/images/high/retro-anime-1920-x-1080-c2j80snlyyywfhny.webp" alt="" />
-		</section>
-
-		<section>
-			<img src="https://wallpapers.com/images/high/stitch-aesthetic-pacifier-4cfd0yb36x95a0ku.webp" alt="" />
-		</section>
-	</main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- Etiqueta de descipcion -->
+		<meta name="description" content="Diario Blog website"/>
+		<!-- Titulo del Blog -->
+		<title>Diary Blog's | UVG IT Technician</title>
+	</head>
+	<body>
+		<header>
+			<img
+				src="https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png"
+				alt="logo uvg"
+			/>
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="./blog.astro">Blog's</a></li>
+					<li><a href="./about.astro">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<Main>
+			<!-- contenido para Main -->
+			<slot></slot>
+		</Main>
+	</body>
 </html>
 
-
 <style>
-  header {
-    background: black;
+	header {
+		background: black;
 		align-items: center;
 		height: 80px;
 		color: white;
 		display: flex;
 		border-radius: 5px;
 		padding: 2em;
-  }
+	}
 
 	img {
 		width: 150px;
 		cursor: pointer;
 	}
-
 
 	nav {
 		flex: 1;
@@ -79,4 +78,7 @@
 		box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
 		border-radius: 1em;
 	}
+
+	
 </style>
+
