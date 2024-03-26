@@ -1,84 +1,45 @@
 ---
+import Navbar from "../components/navbarLayout.astro";
 import Main from "../layouts/mainLayout.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="generator" content={Astro.generator} />
-		<!-- Etiqueta de descipcion -->
-		<meta name="description" content="Diario Blog website"/>
-		<!-- Titulo del Blog -->
-		<title>Diary Blog's | UVG IT Technician</title>
-	</head>
-	<body>
-		<header>
-			<img
-				src="https://res.cloudinary.com/webuvg/image/upload/f_auto/v1551291412/WEB/institucional/logouvg.png"
-				alt="logo uvg"
-			/>
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="./blog.astro">Blog's</a></li>
-					<li><a href="./about.astro">About</a></li>
-				</ul>
-			</nav>
-		</header>
-		<Main>
-			<!-- contenido para Main -->
-			<slot></slot>
-		</Main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <!-- Etiqueta de descipcion -->
+    <meta name="description" content="Diario Blog website" />
+    <!-- Titulo del Blog -->
+    <title>Diary Blog's | UVG IT Technician</title>
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+  <body>
+    <header>
+      <Navbar>
+        <slot />
+      </Navbar>
+    </header>
+    <Main>
+      <!-- contenido para Main -->
+      <slot />
+    </Main>
+    <Footer>
+      <slot />
+    </Footer>
+  </body>
 </html>
 
 <style>
-	header {
-		background: black;
-		align-items: center;
-		height: 80px;
-		color: white;
-		display: flex;
-		border-radius: 5px;
-		padding: 2em;
-	}
-
-	img {
-		width: 150px;
-		cursor: pointer;
-	}
-
-	nav {
-		flex: 1;
-		text-align: right;
-	}
-
-	nav ul li {
-		list-style: none;
-		display: inline-block;
-		margin-left: 80px;
-		padding: 2em;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-		color: white;
-		font-size: 1rem;
-		color: rgba(255, 255, 255, 0.8);
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 1rem;
-		/* padding: 12px 10px; */
-	}
-
-	nav ul li a:hover {
-		color: white;
-		background-color: #0084ff;
-		box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
-		border-radius: 1em;
-	}
-
-	
+  header {
+    background: black;
+    align-items: center;
+    height: 80px;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    padding: 2em;
+  }
 </style>
-
