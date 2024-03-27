@@ -1,2 +1,3 @@
-export const logo = "../img/uvg.webp";
-export let Perfil = "../img/perfil.jpeg";
+export const logo = '../image/uvg.webp';
+import {photo} from '../image/perfil.jpeg';
+
