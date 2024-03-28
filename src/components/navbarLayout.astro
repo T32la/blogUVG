@@ -1,10 +1,9 @@
 ---
-const Perfil = "../img/uvg.webp";
+import { Image } from "astro:assets";
+import logoUVG from "../image/uvg.webp";
 ---
-<img
-  src={Perfil}
-  alt="logo uvg"
-/>
+
+<Image src={logoUVG} alt="logo uvg" width="150" height="150" />
 <nav>
   <ul>
     <li><a href="/">Home</a></li>
@@ -14,37 +13,36 @@ const Perfil = "../img/uvg.webp";
 </nav>
 
 <style>
-	img {
-		width: 150px;
-		cursor: pointer;
-	}
+  Image {
+    cursor: pointer;
+  }
 
-	nav {
-		display: flex;
-		align-items: flex-end;
-		padding: 2rem 0;
-	}
+  nav {
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem 0;
+  }
 
-	ul {
-		display: flex;
-		flex-wrap: wrap;
-		padding: 0;
-		margin: 0 auto 0 0;
-	}
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto 0 0;
+  }
 
-	nav li {
-		opacity: 0.8;
-		list-style: none;
-		font-size: 0.95rem;
-	}
+  nav li {
+    opacity: 0.8;
+    list-style: none;
+    font-size: 0.95rem;
+  }
 
-	a {
-		padding: 0.5rem 1rem;
-		border-radius: 10px;
-		text-decoration: none;
-	}
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+  }
 
-	/* nav {
+  /* nav {
 		flex: 1;
 		text-align: right;
 	}
@@ -71,5 +69,4 @@ const Perfil = "../img/uvg.webp";
 		box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
 		border-radius: 1em;
 	} */
-
 </style>
