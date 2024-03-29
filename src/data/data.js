@@ -1,3 +1,6 @@
-export const logo = '../image/uvg.webp';
-import {photo} from '../image/perfil.jpeg';
+export { proyectImgs } from "../utils/images";
 
+export const Images = [
+  { id: 1, image: proyectImgs.uvg },
+  { id: 2, image: proyectImgs.perfil },
+];
