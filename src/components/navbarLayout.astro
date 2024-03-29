@@ -2,17 +2,28 @@
 import { Image } from "astro:assets";
 import UVG from "@images/uvg.webp";
 ---
+<header>
 
-<Image src={ UVG } alt="logo uvg" width="150" height="150" />
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="./blog.astro">Blog's</a></li>
-    <li><a href="./about.astro">About</a></li>
-  </ul>
-</nav>
+  <Image src={ UVG } alt="logo uvg" width="150" height="150" />
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="./blog.astro">Blog's</a></li>
+      <li><a href="./about.astro">About</a></li>
+    </ul>
+  </nav>
+</header>
 
 <style>
+ header {
+    background: black;
+    align-items: center;
+    height: 80px;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    padding: 2em;
+  }
   Image {
     cursor: pointer;
   }
@@ -41,6 +52,7 @@ import UVG from "@images/uvg.webp";
     border-radius: 10px;
     text-decoration: none;
   }
+
 
   /* nav {
 		flex: 1;

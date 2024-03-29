@@ -22,7 +22,9 @@
       "@data/*": [
         "src/data/*"
       ],
-    }
-    
-  }
+      "@styles/*": [
+        "src/styles/*"
+      ],
+    },
+  },
 }
