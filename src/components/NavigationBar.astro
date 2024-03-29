@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import UVG from "@images/uvg.webp";
+
+import ThemeToggler from "./ThemeToggler.astro";
 ---
 <header>
 
@@ -8,15 +10,15 @@ import UVG from "@images/uvg.webp";
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="./blog.astro">Blog's</a></li>
-      <li><a href="./about.astro">About</a></li>
+      <li><a href="/blog">Blog's</a></li>
+      <li><a href="/about">About</a></li>
     </ul>
+    <ThemeToggler />
   </nav>
 </header>
 
 <style>
  header {
-    background: black;
     align-items: center;
     height: 80px;
     color: white;
@@ -51,6 +53,22 @@ import UVG from "@images/uvg.webp";
     padding: 0.5rem 1rem;
     border-radius: 10px;
     text-decoration: none;
+  }
+
+  a {
+    color: var(--grey-400);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--grey-900);
+  }
+
+  a.active {
+    background: var(--grey-900);
+    color: var(--background);
   }
 
 

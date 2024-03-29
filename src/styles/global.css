@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+html {
+  --background: white;
+  --grey-200: #222222;
+  --grey-400: #444444;
+  --grey-600: #333333;
+  --grey-900: #111111;
+}
+
+html.dark {
+  --background: black;
+  --grey-200: #eaeaea;
+  --grey-400: #acacac;
+  --grey-600: #ffffff;
+  --grey-900: #fafafa;
+}
+
 body {
   font-family: 'Inter', Courier, monospace;
   padding: 0 0.5rem;
@@ -31,4 +47,16 @@ p {
 main {
   max-width: 40rem;
   margin: auto;
+}
+
+
+p,
+li {
+  font-size: 1rem;
+  color: var(--gray-400);
+  opacity: 0.8;
+}
+
+li {
+  margin: 1rem 0;
 }

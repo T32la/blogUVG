@@ -1,11 +1,11 @@
 ---
-import Navbar from "../components/navbarLayout.astro";
-import Main from "../layouts/mainLayout.astro";
-import Footer from "../components/Footer.astro";
+import Navbar from "@components/NavigationBar.astro";
+import Main from "@layouts/mainLayout.astro";
+import Footer from "@components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,6 @@ import Footer from "../components/Footer.astro";
     <meta name="description" content="Diario Blog website" />
     <!-- Titulo del Blog -->
     <title>Diary Blog's | UVG IT Technician</title>
-    <link rel="stylesheet" href="../styles/global.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +27,9 @@ import Footer from "../components/Footer.astro";
     <Main />
     <Footer />
   </body>
+  <script>
+    console.log("Hello World");
+  </script>
 </html>
 
 <style></style>
