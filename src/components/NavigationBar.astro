@@ -1,12 +1,13 @@
 ---
-import ThemeToggler from "./ThemeToggler.astro";
+import ThemeToggler from "./ThemeToggler.astro"
 ---
+
+
 <nav>
-  <ul>
-    <ul><a href="/">Home</a></ul>
-    <ul><a href="/programacion">Programaci&oacute;n</a></ul>
-    <ul><a href="/lenguaje">Lenguaje</a></ul>
-  </ul>
+  <ul><a href="/">Home</a></ul>
+  <ul><a href="/filosofia">Filosofia</a></ul>
+  <ul><a href="/tech">Tecnology</a></ul>
+
   <ThemeToggler />
 </nav>
 
@@ -24,7 +25,7 @@ import ThemeToggler from "./ThemeToggler.astro";
     margin: 0 auto 0 0;
   }
 
-  nav ul {
+  nav li {
     opacity: 0.8;
     list-style: none;
     font-size: 0.95rem;
@@ -37,28 +38,22 @@ import ThemeToggler from "./ThemeToggler.astro";
   }
 
   a {
-    color: var(--grey-400);
+    color: var(--gray-400);
     padding: 0.5rem 1rem;
     border-radius: 10px;
     text-decoration: none;
   }
 
   a:hover {
-    color: var(--grey-900);
+    color: var(--gray-900);
   }
 
   a.active {
     background: var(--grey-900);
     color: var(--background);
   }
-
-  /* a:hover {
-    color: white;
-    background-color: #0084ff;
-    box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
-    border-radius: 1em;
-  } */
 </style>
+
 <script>
   const { pathname } = window.location;
   const activeNavigationElement = document.querySelector(
