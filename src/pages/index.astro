@@ -1,35 +1,54 @@
 ---
-import Navbar from "@components/NavigationBar.astro";
-import Main from "@layouts/mainLayout.astro";
-import Footer from "@components/Footer.astro";
+import { Image } from "astro:assets";
+import Main from "@layouts/Main.astro";
+import myPerfil from "@images/perfil.jpg";
+
 ---
 
-<!doctype html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <!-- Etiqueta de descipcion -->
-    <meta name="description" content="Diario Blog website" />
-    <!-- Titulo del Blog -->
-    <title>Diary Blog's | UVG IT Technician</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
+<Main title="Diario Blog | UVG">
+  <section class="profile">
+    <Image
+      src={myPerfil}
+      class="profile__picture"
+      alt="Profile piture"
+      width={150}
+      height={150}
     />
-  </head>
-  <body>
-    <Navbar />
-    <Main />
-    <Footer />
-  </body>
-  <script>
-    console.log("Hello World");
-  </script>
-</html>
 
-<style></style>
+    <div class="profile__details">
+      <h1>Victoriano Ju&aacute;rez</h1>
+      <h2>T&eacute;cnico en Inform&aacute;tica</h2>
+      <p>
+        Orientar a los desarrolladores para crear excelentes y buenos proyectos
+        excalables.
+      </p>
+    </div>
+  </section>
+</Main>
+
+<style is:global>
+  /* main {
+    width: 100vh;
+    margin: auto;
+  } */
+  .profile {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .profile__details {
+    flex: 1 0 300px;
+  }
+
+  .profile__picture {
+    border-radius: 50%;
+    margin: 0 2rem 1rem 0;
+  }
+
+  .profile__details > h1 {
+    margin-top: 0;
+  }
+</style>
+
