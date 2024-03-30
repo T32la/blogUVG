@@ -1,21 +1,15 @@
 ---
 import NavigationBar from "@components/NavigationBar.astro";
 import Footer from "@components/Footer.astro";
-import "@styles/global.css";
+import "../styles/global.css";
 
 type Props = {
   title: string
 }
 
 const {title} = Astro.props;
-// const blogs = await Astro.glob<{
-//   poster: string;
-//   title: string;
-//   subtitle: string;
-// }>("../pages/blogs/*.md");
 
 // css
-import "@styles/global.css";
 ---
 
 <!DOCTYPE html>
@@ -24,12 +18,8 @@ import "@styles/global.css";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
-  <meta name="generator" content={Astro.generator} />
   <!-- Etiqueta de descipcion -->
   <meta name="description" content="Diario Blog website" />
-  <!-- Titulo del Blog -->
-  <!-- <title>Diary Blog's | UVG IT Technician</title> -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link

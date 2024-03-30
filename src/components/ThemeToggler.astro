@@ -14,15 +14,7 @@
 </button>
 
 <style>
-  :global(.dark) .sun {
-    fill: black;
-  }
-
-  :global(.dark) .moon {
-    fill: transparent;
-  }
-
-  button {
+    button {
     cursor: pointer;
     border-radius: 10px;
     border: 0;
@@ -55,3 +47,36 @@
     fill: transparent;
   }
 </style>
+
+<script>
+  /** Represent the local storage property key by a variable */
+  const COLOUR_MODE = "COLOUR_MODE";
+
+  /** Represent the local storage property values by variables */
+  const LIGHT_THEME = "LIGHT";
+  const DARK_THEME = "DARK";
+
+  /** Represent the toggle theme class by a variable */
+  const DARK_THEME_CLASS = "dark";
+
+  /** Grab the toggle */
+  const toggle = document.querySelector("[data-theme-toggle]");
+  // const toggle = document.querySelector("button");
+  /** Grab the document root element. In this case <html>  */
+  const rootEl = document.documentElement;
+
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      /** toggle the "dark" class on the root element */
+      rootEl.classList.toggle(DARK_THEME_CLASS);
+
+      /**Get the current theme mode i.e., light or dark */
+      const colourMode = rootEl.classList.contains(DARK_THEME_CLASS)
+        ? DARK_THEME
+        : LIGHT_THEME;
+
+      /** Save the current theme to local storage   */
+      window.localStorage.setItem(COLOUR_MODE, colourMode);
+    });
+  }
+</script>

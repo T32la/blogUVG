@@ -1,9 +1,3 @@
-:root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   --background: white;
   --grey-200: #222222;
@@ -23,6 +17,8 @@ html.dark {
 body {
   font-family: 'Inter', Courier, monospace;
   padding: 0 0.5rem;
+  color: var(--grey-600);
+  background: var(--background);
 }
 
 h1 {
@@ -30,9 +26,9 @@ h1 {
   line-height: 1;
 }
 
-h2 {
+h1 + h2 {
   font-size: 2rem;
-  line-height: 1;
+  margin-top: -1.4rem;
   margin-top: .6rem;
   opacity: 0.9;
   font-weight: 700;
@@ -53,7 +49,7 @@ main {
 p,
 li {
   font-size: 1rem;
-  color: var(--gray-400);
+  color: var(--grey-400);
   opacity: 0.8;
 }
 

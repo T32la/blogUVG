@@ -1,24 +1,24 @@
 ---
-import { Image } from "astro:assets";
-import UVG from "@images/uvg.webp";
+// import { Image } from "astro:assets";
+// import UVG from "@images/uvg.webp";
 
 import ThemeToggler from "./ThemeToggler.astro";
 ---
-<header>
 
-  <Image src={ UVG } alt="logo uvg" width="150" height="150" />
+<!-- <header> -->
+  <!-- <Image src={UVG} alt="logo uvg" width="150" height="150" /> -->
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/blog">Blog's</a></li>
-      <li><a href="/about">About</a></li>
+      <li><a href="/programacion">Programaci&oacute;n</a></li>
+      <li><a href="/lenguaje">Lenguaje</a></li>
     </ul>
     <ThemeToggler />
   </nav>
-</header>
+<!-- </header> -->
 
 <style>
- header {
+  /* header {
     align-items: center;
     height: 80px;
     color: white;
@@ -26,13 +26,15 @@ import ThemeToggler from "./ThemeToggler.astro";
     border-radius: 5px;
     padding: 2em;
   }
+  */
+  /*
   Image {
     cursor: pointer;
-  }
+  } */
 
   nav {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 2rem 0;
   }
 
@@ -71,32 +73,20 @@ import ThemeToggler from "./ThemeToggler.astro";
     color: var(--background);
   }
 
-
-  /* nav {
-		flex: 1;
-		text-align: right;
-	}
-
-	nav ul li {
-		list-style: none;
-		display: inline-block;
-		margin-left: 80px;
-		padding: 2em;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-		color: white;
-		font-size: 1rem;
-		color: rgba(255, 255, 255, 0.8);
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 1rem;
-	}
-
-	nav ul li a:hover {
-		color: white;
-		background-color: #0084ff;
-		box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
-		border-radius: 1em;
-	} */
+  /* a:hover {
+    color: white;
+    background-color: #0084ff;
+    box-shadow: 0 5px 10px 2px rgba(10, 137, 255, 0.5);
+    border-radius: 1em;
+  } */
 </style>
+<script>
+  const { pathname } = window.location;
+  const activeNavigationElement = document.querySelector(
+    `nav a[href="${pathname}"]`
+  );
+
+  if (activeNavigationElement) {
+    activeNavigationElement.classList.add("active");
+  }
+</script>
