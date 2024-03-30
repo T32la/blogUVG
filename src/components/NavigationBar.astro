@@ -1,37 +1,16 @@
 ---
-// import { Image } from "astro:assets";
-// import UVG from "@images/uvg.webp";
-
 import ThemeToggler from "./ThemeToggler.astro";
 ---
-
-<!-- <header> -->
-  <!-- <Image src={UVG} alt="logo uvg" width="150" height="150" /> -->
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/programacion">Programaci&oacute;n</a></li>
-      <li><a href="/lenguaje">Lenguaje</a></li>
-    </ul>
-    <ThemeToggler />
-  </nav>
-<!-- </header> -->
+<nav>
+  <ul>
+    <ul><a href="/">Home</a></ul>
+    <ul><a href="/programacion">Programaci&oacute;n</a></ul>
+    <ul><a href="/lenguaje">Lenguaje</a></ul>
+  </ul>
+  <ThemeToggler />
+</nav>
 
 <style>
-  /* header {
-    align-items: center;
-    height: 80px;
-    color: white;
-    display: flex;
-    border-radius: 5px;
-    padding: 2em;
-  }
-  */
-  /*
-  Image {
-    cursor: pointer;
-  } */
-
   nav {
     display: flex;
     align-items: flex-start;
@@ -45,7 +24,7 @@ import ThemeToggler from "./ThemeToggler.astro";
     margin: 0 auto 0 0;
   }
 
-  nav li {
+  nav ul {
     opacity: 0.8;
     list-style: none;
     font-size: 0.95rem;
