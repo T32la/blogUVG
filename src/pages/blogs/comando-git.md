@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Blog.astro"
-poster: "https://imgs.search.brave.com/h1tAYOgt-HZcMH1c0c8QYO1kpuyKVYX6hzKioZ-2HUM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy8yOTYwNjkt/aW50cm9kdWN0aW9u/LXRvLWphdmFzY3Jp/cHQtYmFzaWNzLnBu/Zw"
+poster: "https://imgs.search.brave.com/oee_w25yDMIylFcUgQo_cLhFCFcgOug3hXy8JdidFRU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jNC53/YWxscGFwZXJmbGFy/ZS5jb20vd2FsbHBh/cGVyLzk2OC81MzYv/OTA1L3RlY2hub2xv/Z3ktZ2l0LWhkLXdh/bGxwYXBlci1wcmV2/aWV3LmpwZw"
 title: "Comandos para Git y Github"
 subtitle: "Guardar proyecto en Git, experiencias rápidas para desarrolladores."
 ---
