@@ -34,19 +34,19 @@ const blogs = await Astro.glob<{
   <Cards
     cards={[
       {
-        title: 'Here are my guding philophies for life',
+        title: 'Resumen del Libro | Programación en C',
         gradientFrom: '#818cf8',
         gradientTo: '#d8b4fe',
-        to: '/filosofia',
+        to: '/programa-c',
       },
       {
-        title: 'A summary of my work history',
+        title: 'Libros para aprender a programar',
         gradientFrom: '#fde68a',
         gradientTo: '#fca5a5',
         to: '/work',
       },
       {
-        title: 'What I do beyond technology',
+        title: 'Proyecto de Arduino | Matemáticas',
         gradientFrom: '#6ee7b7',
         gradientTo: '#9333ea',
         to: '/tech',
@@ -61,24 +61,6 @@ const blogs = await Astro.glob<{
       Artículos de opinión que te ayudara a mejorar todo lo que sabes sobre desarrollo web.
     </p>
   </div>
-
-  <!-- <ol class="blogs">
-    <li class="blogs__list">
-      <a href="blogs/typescript" class="blog__link"
-        >Typescript is the new Javascript</a
-      >
-    </li>
-    <li class="blogs__list">
-      <a href="blogs/javascript" class="blog__link"
-        >Why Rust is the future of Javascript tooling</a
-      >
-    </li>
-
-    <li class="blogs__list">
-      <a href="blogs/sleep-more" class="blog__link">Why you should sleep more</a
-      >
-    </li>
-  </ol> -->
 
 	<ol>
 		{

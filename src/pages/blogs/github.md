@@ -59,6 +59,40 @@ Usando el protocolo SSH, te puedes conectar y autenticar con servicios y servido
 
 **Archivo Binario:** Los archivos binarios que contienen bytes suelen ser interpretados como alguna cosa que no sean caracteres de texto. Un ejemplo típico son los programas de ordenador compilados; de hecho, las aplicaciones o programas compilados son conocidos como binarios, especialmente entre los programadores.
 
+### Configurar Git Local desde Terminal
+
+Configurar `git` en local o en nuestro equipo con los siguientes comandos:
+
+```shell
+
+    # configurar nombre de usuario | <nombre - user>
+    git config --global user.name tesla
+
+    # configurar correo email | <email>
+    git config --global user.email "tesla@gmail.com"
+
+    # configurar editor | vim | nvim | vi | <editor>
+    git config --global core.editor vim 
+
+    # configurar los colores
+    git config --global ui.color auto
+
+
+```
+
+```shell
+
+    # con el comando podemos ver la configuracion
+    git config --global -l
+
+   # user.name=Tesla
+   # user.email=tesla@gmail.com
+   # core.editor=nvim
+   # ui.color=auto
+
+```
+
+
 ### Configurar llaves SSH en local
 
 [Crear llaves SSH](https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/)
@@ -105,7 +139,7 @@ Generar Llave:
 
 ```
 
-<img src="https://kinsta.com/wp-content/uploads/2022/01/ssh-keygen.png" />
+<img src="https://kinsta.com/wp-content/uploads/2022/01/ssh-keygen.png" style="zoom:57%;" />
 
 ### Validar llave
 
@@ -244,3 +278,8 @@ Haz, establecido conexion correctamente con Gitlab & Github. Felicidades
 
 
 ```
+
+### Lecturas Recomendadas:
+
+- [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
+- [Git VS GitHub](https://kinsta.com/knowledgebase/git-vs-github/)
