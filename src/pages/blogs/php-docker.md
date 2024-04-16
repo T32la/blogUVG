@@ -232,8 +232,5 @@ Detener contenedor en primer plano
 
 <a href="https://gitlab.com/V-Juarez/php/-/tree/php-docker"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" target="_blank"></a>
 
-Utilizar Docker para aprender un lenguaje de programación, es una oportunidad de no para de aprender. Puedes tomar el <a href="https://platzi.com/cursos/docker/" target="_blank">Curso de Docker</a> y el <a href="https://platzi.com/cursos/terminal/" target="_blank">Curso de Introducción a la Terminal y Línea de Comandos</a> en platzi, de esta manera conoceras los fundamentos de `php`, crear ambientes en contenedores como todo un profesional.
-
 **Nunca pares de aprender**
 
-<a href="https://platzi.com/cursos/php/" target="_blank">Curso Básico de PHP: Instalación, Fundamentos y Operadores</a>
