@@ -2,14 +2,16 @@
 layout: "../../layouts/Blog.astro"
 poster: "https://imgs.search.brave.com/1bpZfrcMGlADVjJ-jREkSR9272GIzeH3yfxp4H-3YHY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L2Nkbi11/cGxvYWRzLzIwMjAw/NTI5MjEzNTI5L0dp/dC12cy1HaXRIdWIu/cG5n"
 title: "Configurar Git y GitHub en local"
-subtitle: "¿Cómo configurar git y utilizarlo desde la terminal?"
+subtitle: "¿Cómo configurar Git y Github desde la terminal?"
 ---
 
 ## Git y Github
 
-Como desarrollador siempre debemos de contar con una herramienta/software para nuestros control de versiones de los proyectos. Evitando, generar muchos documentos como: `documentoFinal.js`, `documentoFinal1.js` y asi hasta completar el proyecto. Git y GitHub es la red social de los desarrolladores.
+Como desarrollador siempre debemos de contar con una herramienta y software para un control de versiones de los proyectos. Evitando, generar muchos documentos como: `documentoFinal.js`, `documentoFinal1.js`, `documentosFinalCorrecciones.js`, `estoSiFunciona.js`, `soloFuncinaEnMiEquipo.js` y asi hasta completar el proyecto. Git y GitHub es la red social de los desarrolladores.
 
-> Git es el sistema de control de versiones. Creado por Linus Torval.
+> Git es un sistema de control de versiones. Creado por Linus Torval.
+>
+> GitHub es una plataforma de desarrollo colaborativo que aloja proyectos en la nube utilizando el sistema de control de versiones llamado Git.
 
 **Los beneficios de utilizar Git Y GitHub desde la terminal es:**
 
@@ -42,7 +44,7 @@ Para verificar que git este instalado, en terminal ejecutar el siguiente comando
 
 ### Configuración de SSH
 
-Usando el protocolo SSH, te puedes conectar y autenticar con servicios y servidores remotos. Con la clave SSH, te puedes conectar con GitHub sin suministrar tu nombre de usuario ni contraseña en cada visita.
+Usando el protocolo SSH, puedes conectar y autenticar con servicios y servidores remotos. Utilizando la llave o clave de SSH.
 
 
 ### Tipos de archivos
@@ -99,13 +101,14 @@ Configurar `git` en local o en nuestro equipo con los siguientes comandos:
 
 ### Generar Llave
 
-Para para generar la llave para conectar el repositorio local con el remoto. 
+Para para generar la llave, y conectar nuestro equipo por medio de la llave de SSH. 
 
-_Sobre el comando, no te preocupes. No tienes que entenderlo por ahora. Es una de las configuraciones más  seguras_. En `gmail` debes utilizar el mismo correo con el que generaste la cuenta en GitHub. 
+_Sobre los comandos, no te preocupes. No tienes que entenderlo por ahora. Es una de las configuraciones más  seguras_. 
+_En el correo debes utilizar el mismo, correo con el que generaste la cuenta en GitHub._
 
 > _No funciono si utilizas otro correo, que no se encuentra registrado en GitHub_
 
-Todo el proceso ser realiza desde la terminal.
+La configuracion es desde la terminal.
 
 Crear la carpeta `.ssh`
 
@@ -145,7 +148,7 @@ Generar Llave:
 
 ```bash
 
-	eval $(ssh-agent -s)
+    > eval $(ssh-agent -s)
 
 
 ```
@@ -154,7 +157,7 @@ Generar Llave:
 
 ```bash
 
-	ssh-add  <ruta-de-la-llave> ruta ~/.ssh/id_rsa
+    > ssh-add  <ruta-de-la-llave> ruta ~/.ssh/id_rsa
 	
 
 ```
@@ -206,25 +209,47 @@ Generar Llave:
 ```
 **Archivo** `config`
 
+En el archivo configuramos por que `PORT` puerto va a conectarse git, por defecto se encuntra en el `port 22`
+
 ```bash
 
-    # Configuracion GitLab
+    # configuracion por default
     Host *
       AddKeysToAgent yes
-      IdentityFile ~/.ssh/github       # Llave privada -> key con diferentes nombres
+      IdentityFile ~/.ssh/github       
+      Host github.com
 
-    # Configuracion GitLHu
-    Host *
-      AddKeysToAgent yes
-      IdentityFile ~/.ssh/id_rsa      # Llave privada -> key con diferentes nombres
+    # Configuracion GitHub personalizada
+    Host github.com
+        Hostname ssh.github.com
+        IdentityFile ~/.ssh/github # Llave privada -> key con diferentes nombres
+        AddKeysToAgent yes
+        Port 443 
+
+    # bitbucket
+    Host bitbucket.org
+        Hostname  altssh.bitbucket.org
+        User git
+        Port  443
+        IdentityFile ~/.ssh/bitbucket
+        AddKeysToAgent yes
+
+    # gitlab
+    Host gitlab.com
+        Hostname altssh.gitlab.com
+        User git
+        Port 443
+        IdentityFile ~/.ssh/gitlab
+        AddKeysToAgent yes
   
   
 ```
 
-Al generar las llaves se crean dos Archivos (el nombre que le asignaste) en este caso `id_rsa` y `id_rsa.pub`. 
+Al generar las llaves se crean dos Archivos (nombre personalizado) en este caso `id_rsa` y `id_rsa.pub`. 
 
-- El primero es la `llave privada`  `id_rsa`el contenido nunca o por cualquier motivo, circunstancia debes compartirlo, no se comparte. 
-- La segunda es la `llave publica - .pub` `id_rsa.pu` el contenido puedes utilizarlo como consideres necesario, se prudente.
+- El primero es la `llave privada`  `id_rsa`, el contenido de esta llave _nunca o por cualquier motivo, circunstancia debes compartirlo_, no se comparte. 
+
+- La segunda es la `llave publica - id_rsa.pub` `id_rsa.pub` el contenido puedes utilizarlo como consideres necesario, puedes compartirlo se prudente.
 
 Con el siguiente comando copias el contenido de la llave publica.
 
@@ -241,23 +266,23 @@ Con el siguiente comando copias el contenido de la llave publica.
 
 ```
 
-### Para github, la configuración:
+### Configuración en GitHub:
 
-1. [Entra en GitHub \]](https://github.com/login) y ve a la sección superior derecha de la página, haz clic en tu foto de perfil y selecciona ***\*Configuración.\****
+1. [Entra a GitHub](https://github.com/login) y ve a la sección superior derecha de la página, haz clic en tu foto de perfil y selecciona ***Configuración.***
 
 <img src="https://kinsta.com/wp-content/uploads/2022/01/GitHub-settings.png" />
 
-2 A continuación, en el perfil de tu configuración, haz clic en **Claves SSH y GPG**.
+2. A continuación, en el perfil de tu configuración, haz clic en **Claves SSH y GPG**.
 
 <img src="https://imgs.search.brave.com/X1MAQi8DFtbKSvC3SLICbqgw2tYYpwk7AWnt-fERa90/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9raW5z/dGEuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzAxL0dp/dEh1Yi1zc2gtZ3Bn/LWtleXMucG5n" />
 
 3. Haz clic en el botón **Nueva** clave SSH.
 
-   <img src="https://kinsta.com/wp-content/uploads/2022/01/GitHub-new-ssh-key.png" style="zoom:50%;" />
+<img src="https://kinsta.com/wp-content/uploads/2022/01/GitHub-new-ssh-key.png" style="zoom:40%;" />
 
 4. Dale un nombre a la clave SSH en GitHub. El nombre que deseas y luego pega la clave publica.
 
-<img src="https://kinsta.com/wp-content/uploads/2022/01/title-key-field.png" style="zoom:67%;" />
+<img src="https://kinsta.com/wp-content/uploads/2022/01/title-key-field.png" style="zoom:48%;" />
 
 4.  Agrega la llave.
 
