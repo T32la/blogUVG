@@ -9,9 +9,11 @@ type Props = MarkdownLayoutProps<{
   title: string;
   poster: string;
   subtitle: string;
+  date: string;
+  author: string;
 }>
 
-const { poster, title, subtitle } = Astro.props.frontmatter;
+const { poster, title, subtitle, date, author } = Astro.props.frontmatter;
 ---
 
 <Main title="Blog's | Information">
@@ -25,9 +27,11 @@ const { poster, title, subtitle } = Astro.props.frontmatter;
       class="figure__image"
     />
     <figcaption class="figure__caption">
-      Poster image for {title.toLocaleLowerCase()}
+      <small>Poster image for </small> {title.toLocaleLowerCase()} 
     </figcaption>
   </figure>
+  <br>
+  <strong><date>{date}</date></strong> | <span>{author}</span>
 
   <h1>{title}</h1>
   <h2>{subtitle}</h2>

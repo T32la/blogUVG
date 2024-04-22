@@ -9,6 +9,8 @@ const blogs = await Astro.glob<{
 	poster: string;
 	title: string;
 	subtitle: string;
+  date: string;
+  author: string;
 }>("../pages/blogs/*.md");
 ---
 

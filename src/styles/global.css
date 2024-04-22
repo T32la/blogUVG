@@ -19,6 +19,7 @@ body {
   padding: 0 0.5rem;
   color: var(--grey-600);
   background: var(--background);
+  line-height: 1.4;
 }
 
 h1 {
