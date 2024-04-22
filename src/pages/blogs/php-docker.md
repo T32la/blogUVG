@@ -240,3 +240,9 @@ Para levantar los contenedores puedes utilizar los comandos por termianl o utili
 **Enlace del Repositorio**
 
 <a href="https://gitlab.com/V-Juarez/php/-/tree/php-docker"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" target="_blank"></a>
+<<<<<<< HEAD
+=======
+
+**Nunca pares de aprender**
+
+>>>>>>> 4db9bde1cfcb0b909df1fa7b8a49167c92dba599
