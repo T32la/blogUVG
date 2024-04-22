@@ -2,13 +2,10 @@
 layout: "../../layouts/Blog.astro"
 poster: "https://imgs.search.brave.com/1bpZfrcMGlADVjJ-jREkSR9272GIzeH3yfxp4H-3YHY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L2Nkbi11/cGxvYWRzLzIwMjAw/NTI5MjEzNTI5L0dp/dC12cy1HaXRIdWIu/cG5n"
 title: "Configurar Git y GitHub en local"
-<<<<<<< HEAD
 subtitle: "¿Cómo configurar git y utilizarlo desde la terminal?"
 date: "marzo 5, 2024"
 author: "Victoriano Juárez"
-=======
 subtitle: "¿Cómo configurar Git y Github desde la terminal?"
->>>>>>> 4db9bde1cfcb0b909df1fa7b8a49167c92dba599
 ---
 
 ## Git y Github
