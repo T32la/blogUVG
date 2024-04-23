@@ -5,7 +5,6 @@ title: "Configurar Git y GitHub en local"
 subtitle: "¿Cómo configurar git y utilizarlo desde la terminal?"
 date: "marzo 5, 2024"
 author: "Victoriano Juárez"
-subtitle: "¿Cómo configurar Git y Github desde la terminal?"
 ---
 
 ## Git y Github
@@ -307,7 +306,14 @@ Haz, establecido conexion correctamente con Gitlab & Github. Felicidades
 
 ```
 
-### Lecturas Recomendadas: 
+## Conclusión
+
+Configurar de manera segurar las credenciales. Nos permite guardar y resguradar los archivos. Y evitar perdidas de datos. Conocer la manera correcta de configurar las credenciales, para los diferentes sistema operativos, permite mucha eficiencia y seguridad.
+
+Conocer los conceptos basicos de git y github. Su beneficio de utilizar estas herramientas son el tiempo, seguridad y eficacia.
+
+### Lecturas Recomendadas:
 
 - [Setting up a repository](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
 - [Git VS GitHub](https://kinsta.com/knowledgebase/git-vs-github/)
+  
