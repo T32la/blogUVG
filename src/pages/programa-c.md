@@ -3,6 +3,8 @@ layout: ../layouts/Blog.astro
 poster: "https://imgs.search.brave.com/xSZnVkl84JYNcTkUxMAPRh9JXAxNprf2MdvAqhwWTtU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMyOTUy/NTIuanBn"
 title: "¿Cómo programar en C"
 subtitle: "Aprender a programar en C"
+date: "marzo 25, 2024"
+author: "Victoriano Juárez"
 ---
 
 ## Lectura: Prgramaci&oacute;n en C
@@ -41,7 +43,7 @@ En la RAM, además de los datos aprocesar, se encuentra también el programa que
 
 ### Lenguaje de Programaci&oacute;n
 
-Un programa, es un ejecutable. Es un conjunto de reglas para manipular la información, escritas como instrucciones de código máquinna. Estas instrucciones son my básicas y sencillas. Se codifican en un formato numérico (cada instruccion es un número) para que el procesador pueda analizarlas fácilmente. Sin embargo, utilizar directamente código máquina para escribir programas es dificil para las personas. El principal motivo es la simplicidad de las instrucciones. Como las instrucciones son my básicas, éstas distan del razonamiento humano. Una idea sencilla puede equivaler a un gran número de instrucciones máquina.
+Un programa, es un ejecutable. Es un conjunto de reglas para manipular la información, escritas como instrucciones de código máquinna. Estas instrucciones son my básicas y sencillas. Se codifican en un formato numérico (cada instruccion es un número) para que el procesador pueda analizarlas fácilmente. Sin embargo, utilizar directamente código máquina para escribir programas es dificil para las personas. El principal motivo es la simplicidad de las instrucciones. Como las instrucciones son my básicas, éstas distan del razonamiento humano. Una idea sencilla puede equivaler a un gran número de instrucciones máquina.p
 
 - Terminal
 - Editor de Código

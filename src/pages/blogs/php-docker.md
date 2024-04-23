@@ -3,7 +3,8 @@ layout: "../../layouts/Blog.astro"
 poster: "https://imgs.search.brave.com/Ez0CHAx_Syxg6dCsBcCJ3nT3kdVnpMtC07e9v9umR8Q/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmRldnNlbnNlLmNv/bS9ibC1jb250ZW50/L3VwbG9hZHMvcGFn/ZXMvYXV0b3NhdmUt/MTE3NTViMWNhZjFj/ZGYyOWZlZDdkY2Ux/ZGM4NDlmODgvcGhw/b25kb2NrZXIucG5n"
 title: "Entorno de Desarrollo para php y Docker"
 subtitle: "¿Cómo configurar un contenedor de docker para PHP?"
-
+date: "febrero 27, 2024"
+author: "Victoriano Juárez"
 ---
 
 Quieres aprender php, pero las configuraciones te han abrumado y el deseo de aprender van mermando. **No, no detengas tu aprendizaje**, siempre existe una solución a los problemas. Instalar php, configurar un servidor web en Windows es muy sencillo, en Linux y macOS es otra situación. Debes conocer sobre la terminal, un editor de código, vim, nano, ser avanzado... y mucho más. 
@@ -89,6 +90,7 @@ Crea e Iniciar el contenedor:
   # plano y los deja en ejecución.
   ➜ docker-compose up -d
 
+  
 ```
 
 <img title="" src="https://i.ibb.co/st9VyTB/up-docker-compose.png" alt="up-docker-compose" style="zoom:67%;">
@@ -228,9 +230,19 @@ Detener contenedor en primer plano
 
 <img title="" src="https://i.ibb.co/WzVDLjz/docker-compose-down.png" alt="docker-compose-down" style="zoom:67%;">
 
+## Conclución
+
+Docker es el sistema de contenedores. Que permite crear proyectos con el lenguaje de programación que se require. Para utilizar docker es necesario instalarlo, docker cuenta con soporte para `Windows`, `Linux` y `macOS`. El sitio web de docker puede identificar que sistema operativo se esta utilizando, el cual genera el boton para descargar el instalador de docker. En `Windows` y `macOS` puedes descargar el instalador de docker, para `linux` puedes realizar la configuración desde la terminal.
+
+Para crear un contenedor de docker con las configuraciones que requiere el proyecto, puedes utilizar el archivo `DOCKERFILE` y para la configuación de `docker-compose` se utiliza `docker-compose.yml`.
+Para levantar los contenedores puedes utilizar los comandos por termianl o utilizar su aplicación.
+
 **Enlace del Repositorio**
 
 <a href="https://gitlab.com/V-Juarez/php/-/tree/php-docker"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" target="_blank"></a>
+<<<<<<< HEAD
+=======
 
 **Nunca pares de aprender**
 
+>>>>>>> 4db9bde1cfcb0b909df1fa7b8a49167c92dba599
