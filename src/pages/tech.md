@@ -7,4 +7,4 @@ author: "Victoriano Juárez"
 date: "abril 2, 2024"
 ---
 
-Suseción Matemática
+## Suseción Matemática
