@@ -20,9 +20,41 @@ Los editores de código fuente tienen características diseñadas exclusivamente
 Embarcadero es un editor de c&oacute;digo, para programar en C/C++. Tiene una interfaz interactiva para el usuario. 
 Este editor es ideal para los usuarios de Windows 10 y Windows 11.
 
+Instalar Embarcadero en windows no es muy complicado. Lo instalamos desde la terminal.
 
+- Ir a la pagina de [winget.run](https://winget.run)
+- En el buscador buscar `Embacadero`
+- En la busqueda nos dara el siguiente información [Embarcadero](https://winget.run/pkg/Embarcadero/Dev-C++)
+- Abrir el `mcd` o `terminal`
+- Pegar el siguiente el comando que se ha copiado:
+
+```sh
+
+  winget install -e --id Embarcadero.Dev-C++
+
+
+```
+
+Le damos permiso de Instalación y espermos a que termine de instalar. Una vez completado abrimos y empezamos a crear los proyectos que deseamos.
+
+Embarcadero va a resaltar el codigo C/C++ de colores, es un buen editor.
+
+```c
+
+  #include <stdio.h>
+  int main()
+  {
+    printf("Hello, World!");
+  }
+
+
+```
 
 ### Dev-C++
+
+Ir al sitio oficial de [Dev-C++](https://www.bloodshed.net/), para descargarlo solo hay que dar clic, en el boton descargar `dev-c++`.
+
+Otra manera de instalar, es pormedio de `winget.run`
 
 ### Eclipse
 
@@ -36,26 +68,7 @@ Este editor es ideal para los usuarios de Windows 10 y Windows 11.
 
 Cada desarrollador elege que tipo de editor utilizar, dependiendo de sus necesidades. En ocasiones, los editores son personalizables, el desarrollador puede personalizar el editor de su preferencia.  Algunos editores de código son compatibles con varios lenguajes de programación, algunos verifican la sintaxis a medidad que el programador escribe, alertando inmediatamente sobre el problema de sintaxis que puede surgir.
 
-Si bien existen muchos editores de texto pueden ser usados para editar código fuente sin problemas, si no mejoran, automatizan y facilitan la edición del código, no ameritan ser llamados "editores de código fuente", y son únicamente editores de texto que pueden ser usados para editar código fuente.
-
-```c
-
-  #include <stdio.h>
-  int main()
-  {
-    printf("Hello, World!");
-  }
-
-```
-
-[Winget.run](https://winget.run/)
+Existen muchos editores de texto pueden ser usados para editar código fuente sin problemas, automatizar y facilitan la edición del código, "editores de código", y son editores de texto que pueden ser usados para editar código fuente.
 
 
-Editor de Codigo 
-
-- Visual Studio Code
-- Eclipse
-- Neovim
-- Vim
-- Visual studio
-- NetBeans
+## [Winget.run](https://winget.run/)
