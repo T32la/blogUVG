@@ -8,6 +8,11 @@ author: "Victoriano Juárez"
 ---
 
 ## Lectura: Prgramaci&oacute;n en C
+
+<div align="center">
+<img title="Programacion en C" src="https://mx.all.biz/img/mx/catalog/32273.jpeg" alt="Programacion en C" style="zoom: 100%;" />
+</div>
+
 > Jordi Bataller Mascarell, 
 > 
 > Rafael Magdalena Benedito
@@ -47,3 +52,4 @@ Un programa, es un ejecutable. Es un conjunto de reglas para manipular la inform
 
 - Terminal
 - Editor de Código
+
