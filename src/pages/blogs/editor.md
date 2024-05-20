@@ -7,7 +7,6 @@ date: marzo 19, 2024
 author: Victoriano Juárez
 ---
 
-<<<<<<< HEAD
 ## Introduccion
 
 Un editor de C&oacute;digo es un editor de texto diseñado espefivicamente para editar el c&oacute;digo fuente de programas Informáticos. Puede ser una aplicaci&oacute;n individual o estar incluido en un entorno de desarrollo integrado `IDE`.
