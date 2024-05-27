@@ -57,7 +57,7 @@ Un programa, es un ejecutable. Es un conjunto de reglas para manipular la inform
 
 ### Mi primer hola mundo
 
-Para crear tu primer programa en `c`.
+Para crear el primer programa en `c`. Utiliza el editor que deseas, creas un nuevo proyecto los llamas `aprendiendo c`, creas un nuevo archivo llamado `main.cpp`; dentro del archivo escribes mi primer `hola mundo!`;
 
 ```c
 
@@ -67,6 +67,41 @@ Para crear tu primer programa en `c`.
     printf("Hola Mundo");
     return 0;
   }
+
+
+```
+
+
+### Algoritmos
+
+**Orden:** Colocaci&oacute;n de las cosas en el lugra que les corresponde.
+
+**Dar Ordenes:** Acci&iacute;n de impartir &oacute;rdenes por parte del dirigente y esperar a que esta se cumplan a la mayor brevedad posible.
+
+**Qu&eacute; es un Algoritmo?** Conjunto de instrucciones sistem&aacute;ticas y previamente definidas que se utilizan para realizar una determinada tarea.
+
+
+### Palabras reservadas
+
+Las palabras serverdas, estas palabras se encuentra ya definidas en el lenguaje. No, puedes crear una `variable`, una `funcion`, un `struct`. Si, se crea alg&uacute;n dato con las palabras reservadas tienen un significado y el programa no va a funcionar.
+
+<img src="http://uia-programacion1.weebly.com/uploads/5/4/6/5/54653763/_3704320_orig.jpg" style="zoom:90%" />
+
+### Tipos de Variables
+
+```c
+
+  // Variables de numeros enteros | integer
+  int numeros = 1;
+
+  // variable para caracterse o mensajes | char or string
+  char letra[] = "Hola";
+
+  // Variable decimal | float
+  float decimal = 1.5;
+
+  // Variable verdadero y Falso | boolean
+  bool verdadero = true;  
 
 
 ```
