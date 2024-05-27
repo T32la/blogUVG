@@ -50,19 +50,82 @@ Embarcadero va a resaltar el codigo C/C++ de colores, es un buen editor.
 
 ```
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Embarcadero/Dev-Cpp/master/Source/Images/screenshot800x600.png" style="zoom:60%" />
+</div>
+
 ### Dev-C++
 
 Ir al sitio oficial de [Dev-C++](https://www.bloodshed.net/), para descargarlo solo hay que dar clic, en el boton descargar `dev-c++`.
 
-Otra manera de instalar, es pormedio de `winget.run`
+La siguiente forma de instalar, es pormedio de `winget.run`
+
+Buscamos `dev-c++`, elegimos el resultado que tiene el mismo nombre y copiamos el comando que se nos proporciona.
+
+```sh
+
+  winget install -e --id Orwell.Dev-C++
+
+
+```
+
+Automaticamente se instala, le damos permisos de administrador. Abrimos el editor.
+
+<div align="center">
+  <img src="https://ftecnologica.udistrital.edu.co/laboratorios/electricidad/sites/lab-tec-electricidad/files/imagen-principal-equipo/2023-03/Dev-C.png" style="zoom:50%" />
+</div>
 
 ### Eclipse
 
+Eclipse es una plataforma de software compuesto por un conjunto de herramientas de programación de código abierto multiplataforma para desarrollar lo que el proyecto llama "Aplicaciones de Cliente Enriquecido", opuesto a las aplicaciones "Cliente-liviano" basadas en navegadores.
+
+Es un entorno de desarrollo integrado (IDE) aplicación de software que ayuda a los programadores a desarrollar código de software de manera eficiente.
+
+[Eclipse | Download](https://www.eclipse.org/downloads/packages/release/2020-12/r/eclipse-ide-embedded-cc-developers)
+
+<div align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*nNTk-j2uaKhxyj3GXsYNdg.png" style="zoom:48%" />
+</div>
+
 ### Visual Studio
+
+Microsoft Visual Studio es un Entorno de Desarrollo Integrado (IDE) compatibles con varios lenguajes de programacion, en especial `C/C++`. Cuenta con extensiones para personalizarlo, una de su extension es la de error. Que marca donde y en que line esta el error en el código.
+
+Para descargar Visual Studio, ir al sitio oficial de Microsoft y descargamos `visual studio community`, al descargar instalamos la aplicacion, aceptamos y le damos permiso de admistrador.
+
+[Visual Studio Community](https://visualstudio.microsoft.com/es/free-developer-offers/)
+
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" width="200px" />
+</div>
 
 ### Visual Studio Code
 
+Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código.
+
+Es un editor liviano, que cuenta con extensiones para personalizar. Por cada extension que se le agrega estos van consumiendo más memoria RAM.
+
+[Visual studio code](https://code.visualstudio.com/download)
+[Visual studio code Insiders](https://code.visualstudio.com/insiders/)
+
+Visual Studio code, es muy buen editor. Puedes utilizar multiples lenguajes de programación. Es gratuito, no tienes que pagar una licencia para utilizarlo.
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/serip39/20200816/20200816155234.png" style="zoom:88%" />
+
 ### Neovim
+
+Neovim es vim, con mucha personalización. Neovim es un editor de texto muy liguero. Neovim funciona con el teclado, todas sus funcionalidades, es por atajo de teclado.
+
+Utilizar neovim ayuda mucho a la hora de escribir código, te ahorras en los clics. Como es de código abierto. Existen, muchos temas y se han desarrollado muchos plugins. Que la hacen mas accesible.
+
+De los temas de personalizacion se encuentra astrovim, muy buen tema. Con ayuda del lenguaje de programación `lua`. Con `lua` se le puede extender las funcionalidades. Gran editor.
+
+[Instalar neovim en windows](https://neovim.io/)
+
+[Astrovim | awesome](https://astronvim.com/)
+
+
+<img src="https://miro.medium.com/v2/resize:fit:1358/1*-IlrRDuuWJ9FpdItJUb04Q.png" style="zoom:48%" />
 
 ## Conclusion
 
