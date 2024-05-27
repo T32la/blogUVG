@@ -53,3 +53,26 @@ Un programa, es un ejecutable. Es un conjunto de reglas para manipular la inform
 - Terminal
 - Editor de Código
 
+## Estructura B&aacute;sica del Languaje de Programaci&oacute;n
+
+### Mi primer hola mundo
+
+Para crear tu primer programa en `c`.
+
+```c
+
+  #include <stdio.h>
+
+  int main() {
+    printf("Hola Mundo");
+    return 0;
+  }
+
+
+```
+
+
+## Concluciones
+
+Conocer la base de programación es importante, la sintaxis, estructura, la estructura... y las muchas cosas más. Crear un programa no es complicado, vasta conseguir las instrucciones para el formato de escritura.
+
