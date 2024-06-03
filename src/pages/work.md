@@ -7,8 +7,28 @@ author: "Victoriano Juárez"
 date: "abril 9, 2024"
 ---
 
-- Programaci&oacute;n en C
+## Biblioteca UVG Altiplano Solol&aacute;
 
-- Python Aplicaciones Pr&aacute;cticas
+Aprender siempre es un reto, en una o varias ocasiones empezar es el desafio m&aacute;s grande. 
+Para las personas que se educan asi mismo (auto-didacticos), en muchas ocasiones les causa fustraci&oacute;n; no saber por donde empezar. Que esperar de una persona, que empieza desde cero.
+
+En la actualidad existen muchas maneras de aprender al tema en especial. Ahora depende del la persona aprender. 
+
+Libros, los libros continuan siendo una de las herramientas efectivas de aprendizaje.
+
+Blog, que va ser especificamente para recomendar libros de programación. El blog se a de actualizar periodicamente. Los libros se encuentran en la Biblioteca **John R. Hamilton**.
+
+## Programaci&oacute;n en C
+
+Libro Programación en C, te orienta a las primeras lineas de código. Al principio detalla las funcionalidades de los sistemas operativos (Windows, Linux, macOS), en los varios sistema operativos el lenguaje de programación en C, cuentan con su propio compilador del lenguaje, editor de texto.
+
+
+
+
+## Python Aplicaciones Pr&aacute;cticas
+
+El libro de **Python Aplicaciones Prácticas** es para personas que tiene experiencia en programación. Es una vista rápida sobre que puedes construir si utilizas el lenguaje de python en los proyectos o es para todas las personas que que estan por conocer el lenguaje de Python.
+
+Son una serie de aplicaciones practicas a desarrollar, y conocer los principios de la sintaxis, estructura y mucho mas.
 
 
