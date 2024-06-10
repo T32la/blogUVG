@@ -1,14 +1,12 @@
 ---
-import { Image } from 'astro:assets';
-import Main from '../layouts/Main.astro';
-import Cards from '../components/Cards.astro';
-
-import Profile from '../utils/images/perfil.jpg';
-
+import { Image } from "astro:assets";
+import Main from "../layouts/Main.astro";
+import "../styles/global.css";
+import Profile from "../utils/images/perfil.jpg";
 const blogs = await Astro.glob<{
-	poster: string;
-	title: string;
-	subtitle: string;
+  poster: string;
+  title: string;
+  subtitle: string;
   date: string;
   author: string;
 }>("../pages/blogs/*.md");
@@ -26,61 +24,36 @@ const blogs = await Astro.glob<{
 
     <div class="profile__details">
       <h1>Victoriano Juarez</h1>
-      <h2>T&eacute;cnico en Inform&aacute;tica</h2>
+      <h2>T&eacute;cnico en Inform&aacute;tica | UVG</h2>
       <p>
-        Blog personal, informaci&oacute;n de como configurar git, github, php, docker, python, django, personalizacion de escritorio Windows, Linux y macOs, entre otros.
-        <br>
-        <br>
-        Blog es enfocados en Informática e programaci&oacute;n, contenido sobre lenguajes de programaci&oacute;n, configuraci&oacute;nes de editor.
-      </p>
+        Blog personal desarrollado en el curso de Comunicaci&oacute;n Oral y Escrita. <strong>Universidad del Valle de Guatemala - Altiplano Sololá</strong>. El contenido son de temas de vistas en clase y temas de programaci&oacute;n como configurar git, github, php,
+        docker, python, django, personalizacion de escritorio Windows, Linux y
+        macOs, entre otros.
+        <br />
+        <br />
+        Blog de contenido de diferentes temas, algunos vistos en clase, proyectos, laboratorios, y entre muchas cosas m&aacute;s.
+        </p>
     </div>
   </div>
 
-  <Cards
-    cards={[
-      {
-        title: 'Libro | Programación en C',
-        gradientFrom: '#818cf8',
-        gradientTo: '#d8b4fe',
-        to: '/programa-c',
-      },
-      {
-        title: 'Libros para desarrollar las habilidades de programación',
-        gradientFrom: '#fde68a',
-        gradientTo: '#fca5a5',
-        to: '/work',
-      },
-      {
-        title: 'Proyecto de Arduino | Matemáticas',
-        gradientFrom: '#6ee7b7',
-        gradientTo: '#9333ea',
-        to: '/tech',
-      },
-    ]}
-  />
-
-  <div class="featured-blogs">
-
-    <h3 class="featured-blogs__title">Blogs Destacados</h3>
-    <p class="featured-blogs__description">
-      Artículos de opinión que te ayudara a mejorar todo lo que sabes sobre desarrollo web.
-    </p>
+  <div class="boton-blog">
+    <a href="/blogs">Blog's</a>
   </div>
-
-	<ol>
-		{
-			blogs.map((blog) => (
-				<li class="blogs__list">
-					<a href={blog.url} class="blog__link">
-						{blog.frontmatter.title}
-					</a>
-				</li>
-			))
-		}
-	</ol>
 </Main>
 
 <style>
+
+  .boton-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 0;
+    }
+    .boton-blog a {
+      border-radius: 10px;
+      background-color: var(--background);
+      border: solid 1px white;
+  }
   .profile {
     display: flex;
     align-items: flex-start;
@@ -111,31 +84,59 @@ const blogs = await Astro.glob<{
     color: var(--gray-900);
   }
 
-	.featured-blogs__description {
-		margin-top: -1.2rem;
-	}
+  .featured-blogs__description {
+    margin-top: -1.2rem;
+  }
 
-	.blogs {
-		font-size: 1rem;
-		font-weight: 500;
-	}
+  .blogs {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-	.blogs__list {
-		border-bottom: 1px solid;
-		border-color: var(--gray-200);
-	}
+  .blogs__list {
+    border-bottom: 1px solid;
+    border-color: var(--gray-200);
+  }
 
-	.blog__link {
-		opacity: 1;
-		height: 100%;
-		display: block;
-		padding: 1rem 0;
-		color: var(--gray-200);
-		text-decoration: none;
-		transition: opacity 0.2s ease-in-out;
-	}
+  .blog__link {
+    opacity: 1;
+    height: 100%;
+    display: block;
+    padding: 1rem 0;
+    color: var(--gray-200);
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
 
-	.blog__link:hover {
-		opacity: 0.7;
-	}
+  .blog__link:hover {
+    opacity: 0.7;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  a {
+    color: var(--gray-400);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--gray-900);
+  }
+
+  a.active {
+    background: var(--grey-900);
+    color: var(--background);
+  }
+
+  div .boton-blog {
+    border: solid 1px var(--gray-200);
+    background-color: var(--gray-200);
+    color: var(--gray-900);
+  }
 </style>

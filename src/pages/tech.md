@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Blog.astro
+layout: "../layouts/Blog.astro"
 poster: "https://imgs.search.brave.com/WDuGR56kTPiPRQC2ITncrxGU_gQNtxMcv0Cl70kTUzo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93LmZv/cmZ1bi5jb20vZmV0/Y2gvOTEvOTEwNWUw/YmQzNjJiMzg4M2U1/MGYwNmY4ZDA5Mjc4/ZDIuanBlZw"
 title: "Matemáticas y Arduino"
 subtitle: "Introducción a Modelos Matemáticos"
