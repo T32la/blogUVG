@@ -11,6 +11,10 @@ date: "abril 2, 2024"
 
 > Lenguaje oculto de unos y ceros.
 
+<div align="center">
+  <img src="https://i.ibb.co/wYm5wQB/Screenshot-from-2024-06-11-06-07-13.png" alt="manual" style="zoom: 50%" />
+</div>
+
 ¿Sabían que cada vez que envían un mensaje de texto, ven un video en YouTube o incluso encienden su computadora, están utilizando un lenguaje oculto de unos y ceros? Este lenguaje, conocido como sistema binario, es fundamental no solo en la tecnología, ya que sin este lenguaje nuestros dispositivos móviles no funcionarían, sino también en la comprensión matemática de muchos sistemas. 
 
 Imaginen que cada vez que encendemos una luz o usamos un sensor, estamos utilizando principios matemáticos fundamentales que pueden ser explicados con modelos matemáticos en el sistema binario y potenciación.
@@ -37,9 +41,21 @@ A su vez, este número binario se traduce en un patrón de luces LED que se enci
 
 **Arduino:** Microcontrolador que procesa las señales del sensor y controla los LEDs.
 
+<div align="center">
+  <img src="https://imgs.search.brave.com/32BLGBo_Y-ONoR8Qqa5C3n74rbG_p1kgc4YAu-JDTrc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c3BhcmtmdW4uY29t/L3IvNTAwLTUwMC9h/c3NldHMvcGFydHMv/Ni8zLzQvMy8xMTAy/MS0wMS5qcGc" alt="arduino" style="zoom: 50%" />
+</div>
+
 **Sensor de Proximidad:** Dispositivo que detecta la distancia de un objeto y envía esta información al Arduino.
 
+<div align="center">
+  <img src="https://i.ibb.co/S3wdwzc/images.jpg" alt="Sensor de proximidad" style="zoom: 90%" />
+</div>
+
 **LEDs:** Diodos emisores de luz que se encienden y apagan para representar los valores binarios.
+
+<div align="center">
+  <img src="https://i.ibb.co/VCnmKDY/download.jpg" alt="Led" style="zoom: 90%" />
+</div>
 
 ### Procesamiento de la Señal en el Arduino
 
@@ -69,8 +85,11 @@ Cada distancia se convierte en un valor binario que se traduce en un patrón de 
 
 **Ejemplo Práctico:**
 
-Consideremos el número 26. Para convertirlo a binario, identificamos los valores que suman 26 utilizando las potencias de 2.
+<div align="center">
+  <img src="https://i.ibb.co/8987B81/binario.png" alt="Sistema Binario" style="zoom:80%" />
+</div>
 
+Consideremos el número 26. Para convertirlo a binario, identificamos los valores que suman 26 utilizando las potencias de 2.
 
 **NOTA:** “Esto significa que los LEDs correspondientes a las posiciones 16, 8 y 2 se encenderán. "Y el resultado en sistema decimal es: 26.
 
@@ -97,6 +116,10 @@ El exponente nos indica cuántas veces se multiplica la base por sí misma.
 
 **Aplicación Práctica:**
 
+<div align="center">
+  <img src="https://i.ibb.co/yXCX1GX/bi1.png" alt="Sistema Binario" style="zoom:80%" />
+</div>
+
 Por ejemplo, en el número binario, 001101101 tenemos 2^6 + 2^5 + 2^3 + 2^2 + 2^0, que se traduce en 64 + 32+ 8 + 4 + 1 = 109. Esta operación muestra cómo un número decimal puede representarse en binario y cómo encender los LEDs correspondientes.
 
 #### Visualización de la Matemática en el Proyecto:
@@ -111,6 +134,13 @@ Acerque un objeto al sensor y observe cómo las luces responden. Si está muy ce
 
 Nuestro proyecto no solo muestra la intersección entre matemática, programación y electrónica, sino que también facilita la comprensión de conceptos abstractos como el sistema binario y la potenciación. Este modelo matemático aplicado es fundamental para entender cómo se procesan y representan digitalmente las señales en el mundo real.
 
+<div aling="center">
+  <img src="https://i.ibb.co/9TpLyrS/IMG-20240603-WA0045.png" alt="Sistema Binario" style="zoom: 40%" />
+  <br>
+  <img src="https://i.ibb.co/GQrfW1M/IMG-20240603-WA0047.png" alt="Sistema Binario" style="zoom: 40%" />
+  <br>
+  <img src="https://i.ibb.co/MkzRtsz/IMG-20240603-WA0051.png" alt="Sistema Binario" style="zoom: 40%" />
+</div>
 
 El proyecto Sistema Binario ha demostrado ser una herramienta valiosa para la enseñanza y el aprendizaje de conceptos matemáticos fundamentales, como el sistema binario y la potenciación, de una manera práctica y visual.
 
