@@ -97,5 +97,12 @@ con el cubre objetos.
 ## Fotografias de una musgo en el Microscopio.
 <div align="center">
   <img src="https://i.ibb.co/LJkf43W/IMG-20240401-WA0072.jpg" alt="IMG-20240401-WA0072" border="0" style="zoom: 50%;" />
-
 </div>
+
+El microscopio, cuenta con 3 tipos de lentes. 
+
+1. 4 / 01
+2. 10 / 0.2
+3. 4 / 0.63
+
+Cada lente tiene una funcion especifica, para ver los objectos. El primer lente: es para ver la estructura del objeto. El segundo lente: es para ver con mas detalle la estructura del objeto, el tercer lente: es para ver el interior del objeto, **Hermoso lo que se puede observar.** 

@@ -47,7 +47,11 @@ En la respiración celular se reduce el oxígeno para la producción de energía
 4. Colocar la 1 ½ taza de tierra de bosque dentro del frasco/tierra negra, dentro del frasco y distribuirlo en toda el área. Luego, agregar la madera en estado en descomposición sobre la tierra.
 5. A planar y distribuir adecuadamente la tierra en el frasco; luego, elegir el lugar a plantar. Plantar las plantas y agregarle la 1 ½ taza de agua. 
 6. Verificar que todo este adecuadamente.
-7.Cerrar el frasco, no abrir el frasco. Sin importar que.
+7. Cerrar el frasco, no abrir el frasco. Sin importar que.
+
+<div align="center">
+  <img src="https://i.imgur.com/ASSn0ax.jpg" alt="Terrario fase incial"  style="zoom: 40%"/>
+</div>
 
 ### Ciclo del Terrario, Creación.
 
@@ -55,15 +59,34 @@ Fecha de Inicio del Terrario: 1 de mayo 2024.
 
 Durante los primeros 4 días las plantas se veían verdes. Los siguientes días 5, 6, 7, 8 las plantas empezaron a perder su color, empezando a secarse y algunos murieron.
 
+<div align="center">
+  <img src="https://i.imgur.com/VkdMBBt.jpg" alt="Terrario fase incial"  style="zoom: 40%"/>
+</div>
+
 Durante 2da. semana, las plantas empezaron adaptarse al clima y a los nutrientes, que se encontraban dentro del frasco. En los primeros días, no hubo cambios por que conservaba los elementos básicos para sobrevivir. Como agua, oxigeno, nutrientes. El ciclo de la Vida empezaba a generarse. 
 
+<div align="center">
+  <img src="https://i.imgur.com/sZiJB7H.jpg" alt="Terrario fase intermedia"  style="zoom: 40%"/>
+</div>
+ 
 En la 3ra. y 4ta. Semana de mayo, le prive de la luz solar al terrario. Los seres vivos en su interior empezaron a descomponerse, actualmente los hongos descomponedores son los que están colonizando el terrario. 
 
 Al quedarse sin luz solar, las plantas no pueden generar su propia alimentación, también no pueden realizar la fotosíntesis. No pueden absorber el carbono, ni producir oxígeno. 
 
 El agua en su interior, no se evapora. Se a quedado en estado líquido. Como observación: El terrario sin luz solar, se queda en estado estático. Y los únicos seres que pueden sobrevivir en ese estado son los hongos. 
 
+<div align="center">
+  <img src="https://i.imgur.com/g17367d.jpg" alt="Colinizacion del micelio"  style="zoom: 40%"/>
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/g17367d.jpg" alt="Colinizacion del micelio"  style="zoom: 40%"/>
+</div>
+
 Al no existir el ciclo del oxigeno y del agua, prácticamente los seres vivos, empiezan a producirse. Los hongos empezaron a descomponer a los organismos que estaban vivos, se están volviendo nutrientes para la siguiente generación de plantas.
 
 De la 1ra hasta la 4ta. Semana, las plantas se adaptan a las circunstancias del ambiente, van modificando su manera de adquirir los nutrientes. Al no existir el ambiente adecuado las plantas quedan en un estado de hibernación para conservarse. El micelio está colonizando el terrario.
 
+<div align="center">
+  <img src="https://i.imgur.com/pu3dRTV.jpg" alt="Terrario colonizado"  style="zoom: 40%"/>
+</div>
